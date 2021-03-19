@@ -43,11 +43,11 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = '我只是一個機器人，只會回復特定訊息....'
-    
+
     if msg == 'hi':
-        r == 'hi'
+        r = 'hi'
     elif msg == '你吃飯了嗎?'
-        r == '我吃電，不吃飯...'
+        r = '我吃電，不吃飯...'
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
